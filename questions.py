@@ -17,17 +17,17 @@ else :
     print("no")
 
 #3.Write a python program to check given character is vowel or consonant.
-# char = input("Enter a character : ") 
-# vowels = ["a","e","i","o","u","A","E","I","O","U"]
-# if char in vowels:
-#     print(f"'{char}' is a vowel")
-# else:
-#     print(f"'{char}' is a consonant")
+char = input("Enter a character : ") 
+vowels = ["a","e","i","o","u","A","E","I","O","U"]
+if char in vowels:
+    print(f"'{char}' is a vowel")
+else:
+    print(f"'{char}' is a consonant")
 
 #4.Write a python program to replace string space with given character in Python.
-# name = "my name is videm shireesha"
-# charecter = input("Enter a character: ")
-# print(name.replace(" ",charecter))
+name = "my name is videm shireesha"
+charecter = input("Enter a character: ")
+print(name.replace(" ",charecter))
 
 #5.Write a python program to count alphabets, digits, and special characters in the string.
 s1 = "siri@123"
