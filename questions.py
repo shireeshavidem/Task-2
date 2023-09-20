@@ -1,17 +1,19 @@
 #1.Write a python program to remove a given  character from string.
 #using replace() 
-str = "I want to go shopping today"
-print(str.replace("p",""))
+string = input("Enter your string: ")
+char = input("Enter the character you want remove from string: ")
+print(string.replace(char,""))
 
 #using translate()
-s = "My favourite food is biryani!"
-print(s.translate({ord("o"): None}))
+string_1 = input("Enter your string: ")
+character = input("Enter the character you want remove from string: ")
+print(string_1.translate({ord(character): None}))
 
 #2.Write a program to check String is Palindrome or not.
-s = "madam"
-def ispalindrome(s):
-    return s == s[::-1]
-if ispalindrome(s):
+string_2 = input("Enter your string: ")
+def ispalindrome(string_2):
+    return string_2 == string_2[::-1]
+if ispalindrome(string_2):
     print("yes")
 else :
     print("no")
@@ -25,17 +27,17 @@ else:
     print(f"'{char}' is a consonant")
 
 #4.Write a python program to replace string space with given character in Python.
-name = "my name is videm shireesha"
-charecter = input("Enter a character: ")
-print(name.replace(" ",charecter))
+string_3 = input("Enter your string: ")
+character = input("Enter a character: ")
+print(string_3.replace(" ",character))
 
 #5.Write a python program to count alphabets, digits, and special characters in the string.
-s1 = "siri@123"
+string_4 = input("Enter your string: ")
 alphabets=digits=special=0
-for i in range(len(s1)):
-     if (s1[i].isalpha()):
+for i in range(len(string_4)):
+     if (string_4[i].isalpha()):
          alphabets = alphabets + 1
-     elif (s1[i].isdigit()):
+     elif (string_4[i].isdigit()):
          digits = digits + 1
      else:
          special = special + 1
@@ -44,11 +46,11 @@ print(digits)
 print(special)
 
 #6.Write a python program to remove all the blank spaces in a given string.
-name = "my name is videm shireesha"
-print(name.translate({ord(" "): None}))
+string_5 = input("Enter your string: ")
+print(string_5.translate({ord(" "): None}))
 
 #7.Write a python program to find sum of integers in the string.
-str1 = "12345siri"
+str1 = input("Enter your string: ")
 def sum_digits_string(str1):
     sum_digit = 0
     for i in str1:
@@ -59,20 +61,21 @@ def sum_digits_string(str1):
 print(sum_digits_string(str1))
 
 #8.Write a python program to Remove Repeated Character from String.
-str2 = "shireesha"
-s = ""
+str2 = input("Enter your string: ")
+new_str = ""
 for i in str2:
-    if i not in s:
-        s = s + i
-print(s)        
+    if i not in new_str:
+        new_str = new_str + i
+print(new_str)        
 
 #9.Write a python program to count occurrence of given character in string. 
-str3 = "today is working day!"
-print(str3.count("i"))
+str3 = input("enter your string: ")
+char = input("Enter a character: ")
+print(str3.count(char))
 
 #10.Write a python program to check string is anagrams or not in Python.
-s3 = "night"
-s4 = "thing"
+s3 = input("enter your string: ")
+s4 = input("enter your string: ")
 a = sorted(s3.lower())
 b = sorted(s4.lower())
 def isanagram():
